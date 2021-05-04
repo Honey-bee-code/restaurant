@@ -23,10 +23,38 @@ function linkAction() {
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-
 /* ===== SCROLL SECTIONS ACTIVE LINK ===== */
+const sections = document.querySelectorAll('section[id]')
 
+function scrollActive(){
+    const scrollY = window.pageYOffset
+
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 50;
+        sectionId = current.getAttribute('id')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+        } else {
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive)
 
 /* ===== CHANGE BACKGROUND HEADER ===== */
+function scrollHeader(){
+    const nav = document.getElementById('header')
+    // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
+    if(this.scrollY >= 200) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
+}
+window.addEventListener('scroll', scrollHeader)
 
-    // When the scroll is greater than 200 viewport height, add the scroll-header class
+/* ===== SHOW SCROLL TOP ===== */
+function scrollTop(){
+    const scrollTop = document.getElementById('scroll-top')
+    // When the scroll is higher than 560 viewport height, add the show-scrolltop class to the a tag with the scrolltop class
+    if(this.scrollY >= 560) scrollTop.classList.add('show-scrolltop'); else scrollTop.classList.remove('show-scrolltop')
+}
+window.addEventListener('scroll', scrollTop)
