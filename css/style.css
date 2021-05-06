@@ -167,6 +167,7 @@ img{
     height: calc(var(--header-height) + 1.5rem);
 }
 
+
 @media screen and (max-width: 768px){
     .nav__menu{
         position: fixed;
@@ -560,5 +561,16 @@ img{
     .about__container,
     .app__container{
         column-gap: 7rem;
+    }
+}
+
+
+@media screen and (max-width: 576px){
+    .nav{
+        padding-bottom: 10px;
+        height: 3rem;
+    }
+    .scroll-header{
+        top: 0;
     }
 }
