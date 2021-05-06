@@ -39,7 +39,7 @@
     --z-fixed: 100;
 
     /* ===== scroll header =====  */
-    --scroll-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --scroll-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 
 }
 
@@ -71,7 +71,7 @@ body.dark-theme{
     --body-color: #1d2521;
     --container-color: #27302c;
     /* ===== scroll header =====  */
-    --scroll-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    --scroll-shadow: 0 2px 4px rgba(255, 255, 255, 0.3);
 }
 
 /* ===== Button Dark/Light ===== */
@@ -110,10 +110,6 @@ img{
     max-width: 100%;
     height: auto;
 }
-
-/* ===== Variables Dark Theme ===== */
-
-/* ===== Button Dark/Light ===== */
 
 /* ===== CLASS CSS ===== */
 .section{
