@@ -278,7 +278,7 @@ img{
 }
 
 .home__img{
-    width: 270px;
+    width: 250px;
     justify-self: center;
 }
 
@@ -565,12 +565,12 @@ img{
 }
 
 
-/* @media screen and (max-width: 576px){
+@media screen and (max-width: 576px){
     .nav{
-        padding-bottom: 10px;
-        height: 3rem;
+        padding-bottom: 3px;
+        height: 2.7rem;
     }
     .scroll-header{
-        top: 0;
+        top: -.5rem;
     }
-} */
+}
