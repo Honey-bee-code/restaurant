@@ -356,6 +356,7 @@ img{
     width: 100%;
     align-self: center;
     margin-bottom: var(--mb-2);
+    border-radius: 6px;
 }
 
 .menu__name, .menu__price{
@@ -538,10 +539,6 @@ img{
     .menu__container{
         grid-template-columns: repeat(3, 210px);
         column-gap: 4rem;
-    }
-
-    .menu__content{
-        padding: 1.5rem;
     }
 
     .app__store{
