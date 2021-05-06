@@ -278,7 +278,7 @@ img{
 }
 
 .home__img{
-    width: 300px;
+    width: 270px;
     justify-self: center;
 }
 
@@ -565,7 +565,7 @@ img{
 }
 
 
-@media screen and (max-width: 576px){
+/* @media screen and (max-width: 576px){
     .nav{
         padding-bottom: 10px;
         height: 3rem;
@@ -573,4 +573,4 @@ img{
     .scroll-header{
         top: 0;
     }
-}
+} */
