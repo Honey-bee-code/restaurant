@@ -37,6 +37,10 @@
     /* ===== z index =====  */
     --z-tooltip: 10;
     --z-fixed: 100;
+
+    /* ===== scroll header =====  */
+    --scroll-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
 }
 
 @media screen and (min-width: 768px){
@@ -61,12 +65,19 @@ html{
 }
 
 /* ===== Variables Dark Theme ===== */
-
+body.dark-theme{
+    --title-color: #f1f3f2;
+    --text-color: #c7d1cc;
+    --body-color: #1d2521;
+    --container-color: #27302c;
+    /* ===== scroll header =====  */
+    --scroll-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
 
 /* ===== Button Dark/Light ===== */
 .change-theme{
     position: absolute;
-    right: 1rem;
+    right: 2rem;
     top: 1.8rem;
     color: var(--text-color);
     font-size: 1rem;
@@ -213,7 +224,7 @@ img{
 
 /* ===== Change background header ===== */
 .scroll-header{
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--scroll-shadow);
 }
 
 /* ===== Scroll top ===== */
