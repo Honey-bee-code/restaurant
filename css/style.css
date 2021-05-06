@@ -575,7 +575,7 @@ img{
     }
     .about__img,
     .app__img{
-        
+        justify-self: center;
     }
     .menu__container{
         grid-template-columns: repeat(2, 1fr);
