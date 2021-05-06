@@ -573,4 +573,12 @@ img{
     .scroll-header{
         top: -.5rem;
     }
+    .about__img,
+    .app__img{
+        
+    }
+    .menu__container{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
 }
